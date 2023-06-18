@@ -9,6 +9,7 @@ import {
 import Home from "./components/pages/home";
 import { BrowserRouter, Route, Routes, useNavigate } from "react-router-dom";
 import Initial from "./components/pages/initial";
+import Wrapper from "./components/wrapper";
 
 if (!import.meta.env.VITE_REACT_APP_CLERK_PUBLISHABLE_KEY) {
   throw new Error("Missing Publishable Key")
@@ -27,11 +28,19 @@ function ClerkProviderWithRoutes() {
         <Route path="/" element={<Initial />} />
         <Route
           path="/sign-in/*"
-          element={<SignIn routing="path" path="/sign-in" />}
+          element={
+            <Wrapper>
+              <SignIn routing="path" path="/sign-in" />
+            </Wrapper>
+        }
         />
         <Route
           path="/sign-up/*"
-          element={<SignUp routing="path" path="/sign-up" />}
+          element={
+            <Wrapper>
+              <SignUp routing="path" path="/sign-up" />
+            </Wrapper>
+          }
         />
         <Route
           path="/home"
