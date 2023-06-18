@@ -27,7 +27,7 @@ function ClerkProviderWithRoutes() {
         <Route path="/" element={<Initial />} />
         <Route
           path="/sign-in/*"
-          element={<SignIn routing="path" path="/sign-in"/>}
+          element={<SignIn routing="path" path="/sign-in" />}
         />
         <Route
           path="/sign-up/*"
