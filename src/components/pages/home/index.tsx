@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <>
       <UserButton/>
-      <div>Hello, {user.firstName}! Welcome!!</div>
+      <div className="text-black">Hello, {user.firstName || "visitor"}! Welcome!!</div>
     </>
   );
 }
