@@ -3,7 +3,7 @@ import linkedInLogo from "../../assets/linkedin.png";
 
 function Footer() {
   return (
-    <footer className="py-6 flex flex-col items-center gap-3">
+    <footer className="py-6 md:pt-12 flex flex-col items-center gap-3">
       <div className="flex gap-5">
         <a href="https://github.com/vivianebresolin" target="_blank">
           <img src={gitHubLogo} alt="GitHub logo" className="w-7"/>

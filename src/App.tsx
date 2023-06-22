@@ -63,7 +63,9 @@ function ClerkProviderWithRoutes() {
 function App() {
   return (
     <BrowserRouter>
-      <ClerkProviderWithRoutes />
+      <div className="">
+        <ClerkProviderWithRoutes />
+      </div>
     </BrowserRouter>
   )
 }
