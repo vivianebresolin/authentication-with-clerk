@@ -1,14 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600&family=Russo+One&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: 'Geologica', sans-serif;
+    font-family: 'Golos Text', sans-serif;
   }
 }
 
 body {
   color: white;
+  background: #00B4D8;
+}
+
+h1, h2, h3 {
+  font-family: 'Russo One', sans-serif;
 }
