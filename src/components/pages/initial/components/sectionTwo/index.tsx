@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AppParagraph from "../../../../AppParagraph";
+import AppParagraph from "../../../../appParagraph";
 
 function SectionTwo() {
   return ( 
