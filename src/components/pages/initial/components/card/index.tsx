@@ -1,4 +1,4 @@
-import AppParagraph from "../../../../appParagraph";
+import AppParagraph from "../../../../AppParagraph";
 
 interface CardProps {
   text: string;
