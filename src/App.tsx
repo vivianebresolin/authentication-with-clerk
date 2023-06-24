@@ -24,6 +24,13 @@ function ClerkProviderWithRoutes() {
     <ClerkProvider
       publishableKey={clerkPubKey}
       navigate={(to) => navigate(to)}
+      appearance={
+        { variables: 
+          {
+            spacingUnit: "0.85rem",
+          }
+        }
+      }
     >
       <Routes>
         <Route path="/" element={<Initial />} />
@@ -36,12 +43,12 @@ function ClerkProviderWithRoutes() {
                 <Footer/>
               </div>
             </Wrapper>
-        }
+          }
         />
         <Route
           path="/sign-up/*"
           element={
-            <Wrapper css={"h-screen"}>
+            <Wrapper css={"sm:h-screen"}>
               <SignUp routing="path" path="/sign-up" />
               <div className="absolute bottom-0">
                 <Footer/>

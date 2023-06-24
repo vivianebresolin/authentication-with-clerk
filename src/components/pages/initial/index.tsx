@@ -1,5 +1,4 @@
 import Footer from "../../footer";
-import Wrapper from "../../wrapper";
 import Header from "./components/header";
 import SectionOne from "./components/sectionOne";
 import SectionThree from "./components/sectionThree";
@@ -8,7 +7,7 @@ import Spacer from "./components/spacer";
 
 export default function Initial() {
   return (
-    <Wrapper>
+    <>
       <Header/>
       <main>
         <SectionOne/>
@@ -17,6 +16,6 @@ export default function Initial() {
         <SectionThree/>
       </main>
       <Footer/>
-    </Wrapper>
+    </>
   );
 }
